@@ -1,55 +1,24 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html>
 
 <head>
 
+<meta charset="utf-8">
+
 <title>Mount Caramel Book Club</title>
-<style>
 
-    body {
-        background-color: aqua;
-    }
-    header{
-        background-color: antiquewhite;
-    }
-    nav {
-        background-color: azure;
-    }
-    #intro{
-        background-color: blue;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-h2 {
-    font-size: larger;
-    color: blueviolet;
-    font-size: larger;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 50px;
-
-}
-p {
-    color: bisque;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 15px;
-    padding: 5px;
-}
-h1 {
-    text-transform: uppercase ;
-    color: bisque ;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-}
-
-
-</style>
+<link rel='stylesheet' href='STYLE.CSS' type="text/css">
 
 </head>
 
 <body>
 
+<div class="grid-container">
+
 <!--Heading-->
+
+<header style='background-color: cadetblue;'>
 
 <h1>
 
@@ -57,40 +26,95 @@ Mount Caramel Book Club
 
 </h1>
 
+<img src="/book3.jpeg" alt="Row of books" width="300">
+
+</header>
+
 <!--navbar-->
 
+<nav>
 
 <ul>
 
 <li><a href="index.html">Home</a></li>
 
-<li><a href="https://idriesshahfoundation.org/books-childrens-books/" target="_blank">Online Resources</a></li>
+<li><a href="https://idriesshahfoundation.org/books-childrens-books/">Online Resources</a></li>
 
 <li><a href="#">Reading Groups</a></li>
 
-<li><a href="#">Contact Us</a></li>
+<li><a href="contact.html">Contact Us</a></li>
 
 </ul>
 
+</nav>
+
 <!--Intro-->
+
+<div id="intro">
 
 <h2>Welcome to Mount Caramel Book Club</h2>
 
 <p>The Mount Caramel Book Club is an online community of book readers in Mount Caramel school.</p>
 
+</div>
+
+<!--Main Section-->
+
+<div id="main-section">
+
 <!--content-1-->
+
+<div class="main-section-content">
 
 <h2>Meet our teachers</h2>
 
+<div id="teachers">
+
+<div class="teacher-info">
+
+<div>
+
+<img src="/kid.jpeg" alt="teacher image" width="100">
+
+</div>
+
+<div>
+
 <h3>Ms. Emma</h3>
 
-<p>She teaches elementary school kids. She has a bachelor's degree in Elementary education</p>
+<p>She teaches elementary school kids. She has a bachelor's degree in Elementary education
+
+</p>
+
+</div>
+
+</div>
+
+<div class="teacher-info">
+
+<div>
+
+<img src="/kid.jpeg" alt="teacher image" width="100">
+
+</div>
+
+<div>
 
 <h3>Ms. Caroline</h3>
 
 <p>She teacher secondary school and high school kids. She has a <i>Master's of Arts</i></p>
 
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 <!--content-2-->
+
+<div id="book-reviews" class="main-section-content">
 
 <h2>Book Reviews</h2>
 
@@ -100,53 +124,135 @@ Mount Caramel Book Club
 
 <p><strong>Sekhar: </strong><q>I really enjoyed reading this book</q></p>
 
-<!--content-3(table)-->
+</div>
+
+<!--content-3-->
+
+<div id="videos" class="main-section-content">
+
+<h2>Related Videos</h2>
+
+<div>
+
+<video width="560" height="315" controls autoplay>
+
+<source src="./public/video.mp4" type="video/mp4">
+
+</video>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wcWLKRXgjsw"
+
+title="YouTube video player"></iframe>
+
+</div>
+
+</div>
+
+<!--content-4(tables)-->
+
+<div class="main-section-content">
 
 <h2>Opening Timings</h2>
-<table>
-    <tr>
-        <th>monday</th>
-        <td>11:00am - 3:00pm</td>
-    </tr>
-    <tr>
-        <th>tuesday</th>
-        <td>11:00am - 3:00pm</td>
-    </tr>
-    <tr>
-         <th>wednesday</th>
-         <td>11:00am - 3:00pm</td>
-    </tr>
-    <tr>
-          <th>thursday</th>
-          <td>11:00am - 3:00pm</td>
-    </tr>
 
- 
+<table>
+
+<tr>
+
+<th>Monday</th>
+
+<td>11am - 3pm</td>
+
+</tr>
+
+<tr>
+
+<th>Tuesday</th>
+
+<td>11am - 3pm</td>
+
+</tr>
+
+<tr>
+
+<th>Wednesday</th>
+
+<td>11am - 3pm</td>
+
+</tr>
+
+<tr>
+
+<th>Thursday</th>
+
+<td>11am - 3pm</td>
+
+</tr>
+
+<tr>
+
+<th>Friday</th>
+
+<td>11am - 1pm</td>
+
+</tr>
+
+<tr>
+
+<th>Saturday</th>
+
+<td>11am - 1pm</td>
+
+</tr>
+
+<tr>
+
+<th>Sunday</th>
+
+<td>Closed</td>
+
+</tr>
+
 </table>
 
+</div>
+
+</div>
+
 <!--Bestseller Section-->
+
+<div id="bestsellers">
 
 <h2>Best Sellers</h2>
 
 <ol>
 
-<li><b>Charlie and The Chocolate Factory</b> by <em>Roald Dahl</em> </li>
+<li><b>The Woman in the Window</b> by <em>A.J.Finn</em></li>
 
-<li><b>The Cat in the Hat</b> by <em>Dr Seuss</em></li>
+<li><b>Stand By Me</b> by <em>S.D.Robertson</em></li>
 
-<li><b>The Little Prince</b> by <em> Antoine de Saint</em></li>
+<li><b>One in a Million</b> by <em>Lindsey Kelk</em></li>
 
-<li><b>Where the Wild Things Are</b> by <em>Maurice Sendak</em></li>
+<li><b>The Secret Wife</b> by <em>Gill Paul</em></li>
 
 </ol>
 
-<!--contact-info-->
+</div>
 
-<p>Contact Us: Mrs. Caroline</p>
+<footer>
 
-<p>Phone No: +1124533</p>
+<p><span>Contact Us:</span> Mrs. Caroline</p>
+
+<p><span>Phone No:</span> +1124533</p>
 
 <address>36th Main, Palm Street , Delhi-36035</address>
+
+</footer>
+
+<!--fifth lesson-->
+
+<button>Enquiry</button>
+
+</div>
 
 </body>
 

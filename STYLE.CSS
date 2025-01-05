@@ -1,0 +1,56 @@
+body{
+    background-color: beige;
+}
+
+header{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    background-color: azure;
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+    
+    display: flex;
+
+    justify-content: center;
+    
+}
+nav{
+    grid-area: nav;
+
+}
+header{
+    grid-area: header;
+}
+#intro{
+    grid-area: intro;
+}
+#bestsellers {
+    grid-area: bestsellers;
+}
+footer{
+    grid-area: footer;
+}
+grid-container{
+
+    display: grid;
+    
+    grid-template-columns: auto auto auto auto auto;
+    
+    grid-template-areas: "header header header header intro"
+    
+    "nav nav nav nav intro"
+    
+    "main-section main-section main-section main-section bestseller"
+    
+    "footer footer footer footer footer"
+    
+    ;
+    
+    
+    }
